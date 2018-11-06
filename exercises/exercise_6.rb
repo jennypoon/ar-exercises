@@ -18,4 +18,6 @@ puts "----------"
 @store2.employees.create(first_name: "Sirius", last_name: "Black", hourly_rate: 80)
 @store2.employees.create(first_name: "Remus", last_name: "Lupin", hourly_rate: 80)
 
-puts "Number of Employees in database: #{Employee.count}"
+puts "Store 1 has #{@store1.employees.count} employees"
+puts "Store 2 has #{@store2.employees.count} employees"
+puts "Total number of employees at all stores: #{Employee.count}"
